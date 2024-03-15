@@ -21,7 +21,7 @@ const CreateNote = () => {
         try {
             await axios.post("http://localhost:3001/notes", note);
             alert("Note created!");
-            navigate("/notes");
+            navigate("/");
         } catch (err) {
             console.error(err);
         }
