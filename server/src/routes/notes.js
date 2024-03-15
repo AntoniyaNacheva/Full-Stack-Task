@@ -3,13 +3,8 @@ import { NoteModel } from "../models/Note.js";
 
 const router = express.Router();
 
-let allNotes = [{
-    id: 1,
-    title: 'Shopping',
-    text: 'Milk, eggs'
-}];
-
-let currentId = 5;
+let allNotes = [];
+let currentId = 0;
 
 router.get("/", (req, res) => {
     try {
@@ -20,7 +15,7 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-    const note = new NoteModel({ id: ++currentId, ...req.body });
+    const note = new NoteModel({ noteId: ++currentId, ...req.body });
 
     try {
         allNotes.push(note);

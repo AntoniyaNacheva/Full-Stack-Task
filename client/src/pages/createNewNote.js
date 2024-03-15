@@ -19,7 +19,7 @@ const CreateNote = () => {
     const onSubmit = async (event) => {
         event.preventDefault();
         try {
-            await axios.post("http://localhost:3001", note);
+            await axios.post("http://localhost:3001/notes", note);
             alert("Note created!");
             navigate("/notes");
         } catch (err) {

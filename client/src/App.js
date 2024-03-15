@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path='/' element={<AllNotes />} />
           <Route path='/create-note' element={<CreateNote />} />
-          <Route path='/:id' element={<SingleNote />} />
+          <Route path='/:noteId' element={<SingleNote />} />
         </Routes>
       </Router>
     </div>

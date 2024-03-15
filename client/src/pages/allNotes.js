@@ -24,11 +24,11 @@ export const AllNotes = () => {
             <h1> Notes List</h1>
             <ul>
                 {notes.map((note) => (
-                    <li key={note.id}>
+                    <li key={note.noteId}>
                         <div>
                             <h2>{note.title}</h2>
                             <h3>{note.text}</h3>
-                            <Link to={`/notes/${note.id}`}>
+                            <Link to={`/notes/${note.noteId}`}>
                                 <button > Details </button>
                             </Link>
                         </div>

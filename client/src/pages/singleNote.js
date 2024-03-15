@@ -43,7 +43,7 @@ export const SingleNote = () => {
                         </div>
                     </div>
                     <div>
-                        <p>{post.text}</p>
+                        <p>{note.text}</p>
                     </div>
                 </>
             ) : (
